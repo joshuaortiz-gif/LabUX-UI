@@ -1,0 +1,114 @@
+/* indice de estilos
+
+0. generales / colores
+1. tipografias
+2. header
+3. enlaces y botones
+4. areas destacadas
+
+*/
+
+/* 0. generales / colores */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-principal: rgb(255, 208, 0);
+    --color-acento: rgba(255, 230, 0, 0.869);
+    --color-tercer: rgb(245, 236, 182); 
+} 
+
+.articulos{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+/* 1. tipografias */
+.titulo-principal{
+    font-family: "Exile", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    color: var(--color-principal);
+    margin: 20px;
+}
+
+.titulo-secundario{
+    font-family: "Exile", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+    color: var(--color-acento);
+}
+
+.parrafo{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(63, 59, 46);
+}
+
+.texto-oculto{
+    display: none;
+}
+
+
+
+/* 2. header */
+#Cabecera-principal{
+    background-color: var(--color-tercer);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-bottom: 10px solid;
+    color: rgb(239, 206, 16);
+}
+
+/* 3. enlaces y botones */
+.boton-principal{
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(129, 99, 1);
+    text-decoration: none;
+    padding: 10px 13px;
+    transition: all linear 0.3s;
+    border-radius: 10px;
+}
+
+.boton-principal:hover{
+    color: lightyellow;
+    background-color: rgb(239, 206, 16);
+}
+
+/* 4. areas destacadas */
+#areas-destacadas{
+justify-content: center;
+}
+
+/* responsives */
+
+@media only screen and (max-width: 600px){
+    #Cabecera-principal{
+        flex-direction: column;
+    }
+    nav[role=navigation]{
+        width: 96%;
+    }
+    .boton-principal{
+        display: block;
+        width: 95%;
+        margin: 5px 2%;
+        text-align: center;
+        border-bottom: 1px solid rgb(129, 99, 1);
+    }
+}
