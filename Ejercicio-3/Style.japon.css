@@ -1,0 +1,27 @@
+/* indice de estilos
+
+0. generales / colores
+1. tipografias
+2. header
+3. enlaces y botones
+4. areas destacadas
+
+*/
+
+/* 0. generales / colores */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-principal: rgb(239, 28, 28);
+    --color-acento: rgba(255, 103, 103, 0.869);
+    --color-tercer: rgb(245, 182, 182); 
+} 
+
+.articulos{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
