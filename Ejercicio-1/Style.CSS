@@ -1,0 +1,54 @@
+/*Todas las etiquetas - universal */
+*{  
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+    /* contenedeores principales */
+    body{
+        background: url(Assets/imagen-back.jpg) 0 0 no-repeat;
+        background-size: cover;
+    }
+
+    main{
+        background: rgba(0, 0, 0, 0.7);
+        width: 100%;
+        max-width: 650px;
+        margin: 0 auto 0 auto;
+        padding: 10px 10px 10px 10px;
+    }
+
+    /* Titulos */
+    h1{
+        color: palevioletred;
+        font-size: 80px;
+        font-family: "Henny Penny", system-ui;
+        font-weight: 400;
+        font-style: normal;
+    }
+    h2{
+        color: rgb(251, 147, 182);
+        font-size: 30px;
+         font-family: "Mountains of Christmas", serif;
+            font-weight: 700;
+            font-style: normal;
+        margin: 10px 0 10px 0;
+    }
+
+    .Parrafo-pf{
+        color: beige;
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: <weight>;
+        font-style: normal;
+        
+    }
+
+    img{
+        width: 100%;
+    }
+    
