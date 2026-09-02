@@ -1,0 +1,153 @@
+/* indice de estilos
+
+0. generales / colores
+1. tipografias
+2. header
+3. enlaces y botones
+4. areas destacadas
+
+*/
+
+/* 0. generales / colores */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-principal: rgb(230, 55, 70);
+    --color-acento: rgb(242, 250, 239);
+    --color-tercer: rgb(167, 218, 220); 
+} 
+
+.articulos{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+.Logo{
+    width: 100px;
+}
+
+.footer-brand{
+    background-color: var(--color-acento);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-bottom: 10px solid;
+    color: var(--color-principal);
+}
+
+/* 1. tipografias */
+.titulo-principal{
+    font-family: "Ruslan Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+    color: var(--color-principal);
+    margin: 20px;
+}
+
+.titulo-secundario{
+    font-family: "Ruslan Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: var(--color-tercer);
+    margin: 20px;
+}
+
+.parrafo{
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(29, 54, 88);
+}
+
+.description{
+    font-family: "Forum", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(29, 54, 88);
+}
+
+/* 2. header */
+#Cabecera-principal{
+    background-color: var(--color-acento);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-bottom: 10px solid;
+    color: var(--color-principal);
+}
+
+/* 3. enlaces y botones */
+.boton-principal{
+    font-family: "Forum", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: var(--color-principal);
+    text-decoration: none;
+    padding: 10px 13px;
+    transition: all linear 0.3s;
+    border-radius: 10px;
+}
+
+.boton-principal:hover{
+    color: var(--color-tercer);
+    background-color: var(--color-principal);
+}
+
+.boton-secundario{
+    font-family: "Forum", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: rgb(29, 54, 88);
+    text-decoration: none;
+    padding: 10px 13px;
+    transition: all linear 0.3s;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.boton-secundario:hover{
+    color: var(--color-acento);
+    background-color: var(--color-tercer);
+}
+
+
+/* 4. areas destacadas */
+#areas-destacadas{
+justify-content: center;
+}
+
+/* responsives */
+
+@media only screen and (max-width: 600px){
+    #Cabecera-principal{
+        flex-direction: column;
+    }
+    nav[role=navigation]{
+        width: 96%;
+    }
+    .boton-principal{
+        display: block;
+        width: 95%;
+        margin: 5px 2%;
+        text-align: center;
+        border-bottom: 1px solid var(--color-principal);
+    }
+}
